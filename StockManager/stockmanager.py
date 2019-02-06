@@ -40,7 +40,7 @@ class Login(QtWidgets.QDialog):
         super(Login, self).__init__(parent)
         self.textName = QtWidgets.QLineEdit(self)
         self.textPass = QtWidgets.QLineEdit(self)
-        self.buttonLogin = QtWidgets.QPushButton('Login', self)
+        self.buttonLogin = QtWidgets.QPushButton('Admin Login', self)
         self.buttonLogin.clicked.connect(self.handleLogin)
 
         layout = QtWidgets.QVBoxLayout(self)
@@ -50,8 +50,8 @@ class Login(QtWidgets.QDialog):
 
 
     def handleLogin(self):
-        if (self.textName.text() == 'foo' and
-            self.textPass.text() == 'bar'):
+        if (self.textName.text() == 'Admin' and
+            self.textPass.text() == '1234'):
             self.accept()
         else:
             QtWidgets.QMessageBox.warning(
@@ -90,7 +90,7 @@ class stackedExample(QWidget):
         self.leftlist.insertItem(0, 'Add Stock')
         self.leftlist.insertItem(1, 'Manage Stock')
         self.leftlist.insertItem(2, 'View Stock')
-        self.leftlist.insertItem(3, 'Generate Invoice')
+        self.leftlist.insertItem(3, 'View Transaction History')
 
         self.stack1 = QWidget()
         self.stack2 = QWidget()
