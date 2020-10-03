@@ -2,23 +2,19 @@ from PyQt5 import QtWidgets
 import os
 import datetime
 import manipulation as mp
-import init_db
 from PyQt5.QtCore import QRect
 from PyQt5.QtWidgets import QTabWidget
 from PyQt5.QtWidgets import QTableWidget
 from PyQt5.QtWidgets import QTableWidgetItem
 from PyQt5.QtWidgets import QVBoxLayout
-from PyQt5.QtCore import QDate
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QCalendarWidget
 from PyQt5.QtWidgets import QFormLayout
-from PyQt5 import QtCore
 from PyQt5.QtWidgets import QLabel
 from PyQt5.QtWidgets import QLineEdit
 from PyQt5.QtWidgets import QListWidget
 from PyQt5.QtWidgets import QStackedWidget
 from PyQt5.QtWidgets import (QWidget, QPushButton,QMainWindow,
-                             QHBoxLayout, QApplication,QAction,QFileDialog)
+                             QHBoxLayout, QAction)
 
 import sqlite3
 
